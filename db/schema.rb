@@ -11,9 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160306175052) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "vendors", force: :cascade do |t|
+    t.string   "first_name",          null: false
+    t.string   "last_name",           null: false
+    t.string   "phone_1",             null: false
+    t.string   "company"
+    t.string   "email"
+    t.string   "website_address"
+    t.string   "tax_id_number"
+    t.string   "address_1"
+    t.string   "address_2"
+    t.string   "city"
+    t.string   "state"
+    t.string   "county"
+    t.string   "zipcode"
+    t.string   "company_description"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
 
 end
