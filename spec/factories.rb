@@ -13,4 +13,8 @@ FactoryGirl.define do
     county 'Ulster'
     zipcode '12477'
   end
+
+  factory :vendor_request do
+    dates_requested
+  end
 end

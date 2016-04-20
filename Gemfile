@@ -16,6 +16,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'select2-rails', '3.5.9.1'
 
+gem 'rails_12factor', group: :production
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,7 +41,6 @@ group :development, :test do
   gem 'pry-rails'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
-  gem 'rails_12factor', group: :production
 end
 
 group :test do
