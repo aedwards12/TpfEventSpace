@@ -1,1 +1,120 @@
-test
+.row.info-section
+  .small-12.medium-8.columns
+    %h3
+      Kingston, NY
+      %span
+        |
+        %a.social-icon{href: 'https://www.facebook.com/Kingston-Flea-Market-1519964291665795/'}
+          %i.fa.fa-facebook-official
+
+    %h5 516 Broadway. Kingston, New York 12401
+  .small-12.medium-4.columns
+    %ul.menu
+      %li
+        %a{ href: "https://www.google.com/maps/place/516+Broadway,+Kingston,+NY+12401/@41.9282395,-74.0023333,17z/data=!3m1!4b1!4m2!3m1!1s0x89dd0fa6d6de9c35:0xa147b4b62a3c056a", title: "directions" }
+          %i.fa.fa-map-marker
+          Get directions
+      %li
+        %a{ href: "#telephone", title: "telephone" }
+          %i.fa.fa-phone
+          (845) 594-5055
+
+.row#flea
+  .small-12.columns.flea-section
+    .title-bar
+      Flea Market
+    .row
+      .small-12.medium-10.large-9.flea-content.small-centered.columns
+        .row.column.flea-header
+          %h3 Grand Opening January 9th, 2016
+        .row
+          .small-12.medium-6.columns.flea-inner-section
+            %ul.event-content
+              %h4 Indoor Flea Market
+              %li Free Admission
+              %li Open Saturday/Sunday 10am - 6pm
+              %li Ample Parking
+              %li New and used merchandise, large amount of flea market merchandise, crafts, collectibles, produce. Snack bar, restrooms
+
+          .small-12.medium-6.columns.flea-inner-section
+            %h4.color-black Vendors Needed
+            %ul.vendor-list
+              %li Come to market yourselves and your business and help in our initiative to revitalize our community
+              %br
+              %li.cta-button
+                %a.button{ href: "http://goo.gl/forms/0CNiMVs3Zp"}
+                  Vendor Request Form
+
+.row#event_space.event-space
+  .row
+    .small-12.columns
+      .title-bar
+        Event Space
+  .row
+    .small-12.columns.event-content
+      %h5 Unforgettable Venues Any Budget. Professional Or Personal Events.
+      %p Beautiful open event space, located in the heart of Kingston, NY. This space is perfect for cocktail parties, conferences, meetings, launch parties, team events, baby showers, bridal showers, intimate weddings and/or receptions, and more.
+      %ul
+        Space Details
+        %li
+          Hourly rates available (Mon-Sun), *Sat-Sun 7pm - until
+        %li
+          1600 square feet, ~ 266 person capacity ( cocktail party )
+        %li
+          Street-level Entry
+        %li
+          Large Windows
+        %li
+          Parking Lot
+      / %p Rented by the hour ( Weekdays - Weekends 'beginning at 7pm' )
+      / %p 1600 Sqft, ~ 266 person capacity ( cocktail party )
+      / %p Unique Venues For Any Occasion. Team Events, Launch Parties, Meetings, Conferences, Parties, Weddings & More
+      %a.button{ href: "http://goo.gl/forms/96860UYn6I", title: "Request Form"}
+        Event Space Request Form
+  .row.small-up-1.medium-up-3.large-up-3.event-images
+    .column
+      %img.thumbnail{src:"/images/20160102_142218.jpeg", alt:"Photo of Uranus"}
+    .column
+      %img.thumbnail{src:"/images/20160102_142235.jpeg", alt:"Photo of Uranus"}
+    .column
+      %img.thumbnail{src:"/images/20160102_142431.jpeg", alt:"Photo of Uranus"}
+
+.row#map.map-section
+  .small-12.columns
+    #map
+
+.row#contact.contact-section
+  .small-12.columns
+    .title-bar
+      Contact Information
+  .small-12.medium-6.columns.end
+    %ul.contact-list
+      %li.fn
+        Tammara Taylor
+      %li.street-address
+        516 Broadway
+      %li.locality
+        Kingston New York, 12401
+      %li.email
+        %a{ href: "mailto:Tammara@jforu.com?Subject=Information%20request", title: "email address" }
+          tammara@jforu.com
+
+
+:javascript
+  $(document).ready( function() {
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 41.9282395, lng: -74.0023333},
+        scrollwheel: false,
+        zoom: 17
+      });
+      var marker = new google.maps.Marker({
+        position: {lat: 41.9282395, lng: -74.0023333},
+        map: map,
+        title: 'Kingston Flea'
+      });
+    }
+    initMap();
+  });
+
