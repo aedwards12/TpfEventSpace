@@ -1,15 +1,16 @@
 !!! 5
 %html
   %head
-    %title>The Perfect Fit Event Space
+    %title The Perfect Fit Event Space
     %meta{:charset => "utf-8", description: 'Beautiful open event space, located in the heart of Kingston, NY. This space is perfect for cocktail parties, conferences, meetings, launch parties, team events, baby showers, bridal showers, intimate weddings and/or receptions, and more.' }
+    %meta{:name => "Viewport", content: "width=device-width, initial-scale=1.0" }
     %link{:rel => :stylesheet, :type => :"text/css", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"}
 
-    = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag    'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
 %body
-  .top-bar#menunav
+  .top-bar
     .top-bar-left
       .menu-text
         The Perfect Flea Market & Event Space
