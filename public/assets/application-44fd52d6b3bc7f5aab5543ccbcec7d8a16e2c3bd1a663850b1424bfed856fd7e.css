@@ -1,0 +1,168 @@
+/**
+ * Foundation for Sites by ZURB
+ * Version 6.2.1
+ * foundation.zurb.com
+ * Licensed under MIT Open Source
+ */
+/*// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+
+body{
+  color: #E6E6E6;
+}
+.row {
+  max-width: 100%;
+}
+
+.flea-section{
+  box-shadow: inset 0 20px 20px -20px #000000;
+  height: 30em;
+  background-image: url("http://www.longisland.com/site_media/images/resource/Otavalo_Market_II_Philip_Niewold_Philipn.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+.flea-content{
+  background-color: rgba(255, 255, 255, 0.94);
+  padding: 1em;
+}
+.flea-header{
+  padding: 1em 0em;
+  text-align: center;
+  background-color: #2B256B;
+}
+
+.flea-header h3{
+  color:#FFFDB5;
+}
+
+.flea-inner-section{
+  padding:1em;
+}
+
+.color-black, .flea-inner-section ul li, .flea-inner-section h4{
+  color: black;
+}
+
+.contact-section{
+  height: 13em;
+  background-color: #092D46;
+  box-shadow: inset 0 20px 20px -20px #000000;
+}
+
+.contact-list{
+  list-style-type: none;
+  color: #F9F9F9;
+
+}
+.event-space{
+  background-color: #092D46;
+  box-shadow: inset 0 20px 20px -20px #000000;
+  padding-bottom: 1em;
+}
+
+.event-content{
+  padding-left: 2em;
+}
+.event-images{
+  padding-left: 1.2em;
+}
+
+.event-content ul li{
+  margin-left: 1em;
+}
+
+.map-section{}
+
+.info-section{
+  padding-top: 1.5em;
+  position:relative;
+  background-color: #F9F9F9;
+}
+
+.info-section .columns h3, h5, .menu li, .social-icon{
+  color: #888787;
+}
+
+.event-space .row .small-12 .columns p {
+  color: blue;
+}
+
+.social-icon{
+  font-size: .75em;
+}
+
+.menu li a{
+  color: #888787;
+  @media only screen {
+    display: block;
+  }
+}
+
+.vendor-list{
+  list-style-type: none;
+}
+
+.menu li {
+  @media only screen {
+    display: list-item;
+  }
+}
+
+.small-12 .menu{
+  position:absolute;
+  bottom:0;
+}
+
+#map {
+  height: 25em;
+  box-shadow: inset 0 20px 20px -20px #000000;
+}
+
+/*overrides*/
+.top-bar{
+  box-shadow: 0px 1px 5px #222222;
+  /* the rest of your styling */
+}
+.top-bar, .top-bar ul{
+  background-color: #2B256B;
+}
+
+.title-bar{
+  height: 2em;
+  background-color: rgba(10, 10, 10, 0);
+  font-size: 2rem;
+  color: #F9F9F9;
+}
+
+.vcard li{
+  color: #F9F9F9;
+}
+
+.menu-text{
+  font-size: 32px;
+  color: #F9F9F9;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+
+ @import "foundation_and_overrides";
